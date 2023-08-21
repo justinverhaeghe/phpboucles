@@ -37,9 +37,9 @@ $number = 1;
         <div class="text-center ">
             <p>
                 <?php
-                while ($number <= 10) {
-                    $number = $number + $number / 2;
-                    echo "$number <br>";
+                while ($number <= 10) { ?>
+            <p><?= $number ?></p>
+            <?php $number += $number / 2;
                 }
                 ?>
 

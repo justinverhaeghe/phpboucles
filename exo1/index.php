@@ -37,9 +37,9 @@ $count = 0;
         <div class="text-center ">
             <p>
                 <?php
-                while ($count <= 10) {
-                    echo "$count <br>";
-                    $count++;
+                while ($count < 10) { ?>
+            <p><?= $count?></p>
+            <?php $count++;
                 }
                 ?>
 

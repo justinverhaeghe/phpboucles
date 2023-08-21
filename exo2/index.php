@@ -1,6 +1,6 @@
 <?php
 $number1 = 0;
-$number2 = 5;
+$number2 = rand(1,100); //Mise en place d'un random number
 ?>
 
 <!DOCTYPE html>
@@ -41,9 +41,9 @@ $number2 = 5;
             <p>
                 <?php
                 while ($number1 <= 20) {
-                    $result = $number1 * $number2;
-                    $number1++;
-                    echo "$result <br>";
+                    $result = $number1 * $number2;?>
+            <p><?= $result?></p>
+            <?php $number1++;
                 }
                 ?>
 
